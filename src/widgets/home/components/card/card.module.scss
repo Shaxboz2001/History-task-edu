@@ -1,0 +1,75 @@
+.card {
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     // min-width: 315px;
+     // min-height: 460px;
+     border-width: 1px;
+     border-style: solid;
+     border-color: #dbdbdb;
+     background: #fff;
+     cursor: pointer;
+     // &:hover img {
+     //      transform: scale(1.1);
+     // }
+     &:hover {
+          transition: all 0.2s ease-out;
+          box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+          transform: translateY(-4px);
+          border: 1px solid #cccccc;
+     }
+     img {
+          width: 100%;
+          height: auto;
+     }
+     .cardBottom {
+          padding: 12px 20px;
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          & > div {
+               display: flex;
+               gap: 20px;
+               & > p {
+                    display: flex;
+                    gap: 8px;
+                    align-items: center;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 15px;
+                    letter-spacing: 0em;
+                    color: #313131;
+               }
+          }
+          & > span {
+               font-size: 14px;
+               font-weight: 600;
+               line-height: 17px;
+               letter-spacing: 0em;
+               color: #a20025;
+               // margin-top: 20px;
+          }
+     }
+     .arrow {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 44px;
+          height: 44px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #f1f1f1;
+          transition: all 0.32s ease;
+          cursor: pointer;
+          &:hover {
+               background-color: #a20025;
+               & > svg {
+                    fill: #fff;
+                    path {
+                         stroke: #fff;
+                    }
+               }
+          }
+     }
+}

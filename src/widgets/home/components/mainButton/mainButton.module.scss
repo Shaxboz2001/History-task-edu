@@ -1,0 +1,14 @@
+.mainButton {
+     transition: all 0.3s ease;
+     background: #a20025;
+     svg {
+          transition: all 0.32s ease;
+     }
+     &:hover {
+          background: #63051b;
+          transform: translateY(-5px);
+          svg {
+               transform: rotate(-180deg);
+          }
+     }
+}

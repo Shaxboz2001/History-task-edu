@@ -1,0 +1,118 @@
+.news {
+     & > div:nth-child(1) {
+          display: flex;
+          align-items: end;
+          width: 100%;
+          justify-content: space-between;
+          h1 {
+               color: #242424;
+               font-size: 36px;
+               font-weight: 700;
+               line-height: 44px;
+               letter-spacing: 0em;
+          }
+          sub {
+               font-size: 14px;
+               font-weight: 700;
+               line-height: 17px;
+               letter-spacing: 0em;
+               color: #a20025;
+          }
+     }
+     .cardsCont {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 20px;
+          margin-top: 20px;
+          .newsCard {
+               & > div {
+                    position: relative;
+                    padding: 30px;
+                    height: 201px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    border: 1px solid #dbdbdb;
+                    h1 {
+                         font-size: 30px;
+                         font-weight: 800;
+                         line-height: 37px;
+                         letter-spacing: 0em;
+                    }
+                    span {
+                         font-size: 10px;
+                         font-weight: 600;
+                         line-height: 12px;
+                         letter-spacing: 0em;
+                         color: #a20025;
+                    }
+               }
+               img {
+                    width: 100%;
+               }
+               .arrow {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    width: 44px;
+                    height: 44px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #f1f1f1;
+                    transition: all 0.32s ease;
+                    cursor: pointer;
+                    &:hover {
+                         background-color: #a20025;
+                         & > svg {
+                              fill: #fff;
+                              path {
+                                   stroke: #fff;
+                              }
+                         }
+                    }
+               }
+          }
+          .thirdBox {
+               display: flex;
+               flex-direction: column;
+               justify-content: space-between;
+               & > div {
+                    display: flex;
+                    border: 1px solid #dbdbdb;
+                    & > div {
+                         display: flex;
+                         justify-content: center;
+                         align-items: center;
+                         padding: 0 30px;
+                         p {
+                              color: #313131;
+                              font-size: 14px;
+                              font-weight: 600;
+                              line-height: 20px;
+                              letter-spacing: 0em;
+                         }
+                    }
+               }
+          }
+     }
+     .info {
+          h1 {
+               color: #242424;
+               font-size: 30px;
+               font-weight: 700;
+               line-height: 37px;
+               letter-spacing: 0em;
+               text-align: left;
+               margin-top: 30px;
+          }
+          p {
+               color: #242424;
+               margin-top: 20px;
+               font-size: 16px;
+               font-weight: 400;
+               line-height: 29px;
+               letter-spacing: 0em;
+          }
+     }
+}

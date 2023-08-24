@@ -1,0 +1,39 @@
+.latest {
+     & > h1 {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+     }
+     & > div {
+          display: grid;
+          grid-template-columns: 20% 30% 50%;
+          margin-top: 20px;
+          ul {
+               list-style: none;
+               &:nth-child(2) {
+                    li {
+                         color: #a20025;
+                         &:nth-child(1) {
+                              color: #313131;
+                         }
+                    }
+               }
+               & > li:nth-child(1) {
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 30px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    border-bottom: 1px solid #dbdbdb;
+               }
+               li {
+                    padding: 20px 0;
+                    font-size: 18px;
+                    font-weight: 400;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: #313131;
+               }
+          }
+     }
+}
